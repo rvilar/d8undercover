@@ -3,7 +3,7 @@ var SLIDE_CONFIG = {
   settings: {
     title: 'Drupal 8: Undercover initiatives',
     //subtitle: 'Subtitle Goes Here',
-    eventTitle: 'Drupal Developer Days Szeged 2014',
+    eventTitle: 'II Jornada DrupalUPC',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
@@ -19,12 +19,12 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Pedro Cambra',
-    company: 'Drupal dreamer at Ymbra',
+    name: 'Ramon Vilar',
+    company: 'CEO & Drupal dreamer at Ymbra',
 //    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@pcambra',
+    twitter: '@rvilar',
     www: 'http://ymbra.com',
-    drupal: 'http://drupal.org/user/122101'
+    drupal: 'https://drupal.org/u/rvilar'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',
