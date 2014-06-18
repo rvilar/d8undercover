@@ -944,11 +944,12 @@ article.biggest {
 }
 
 aside.gdbar {
-  height: 180px;
-  width: 265px;
+  height: 68px;
+  width: 360px;
   position: absolute;
   left: -1px;
   top: 125px;
+  padding: 5px 10px;
   @include border-radius(0 10px 10px 0);
   @include background(linear-gradient(left, $gray-1, $gray-1) no-repeat);
   @include background-size(0% 100%);
@@ -971,14 +972,6 @@ aside.gdbar {
     top: -moz-initial;
     top: initial;
     bottom: $slide-left-right-padding;
-  }
-
-  img {
-    width: 229px;
-    height: 150px;
-    position: absolute;
-    right: 0;
-    margin: 5px 18px;
   }
 }
 
