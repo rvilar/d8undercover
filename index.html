@@ -123,7 +123,7 @@
   <slide class="fill nobackground" style="background-image: url(images/toomuchwysiswyg.jpg)">
   </slide>
 
-  <slide>
+  <slide hidden>
     <article class="centered">
       <img src="images/inline_editing.jpg">
     </article>
@@ -187,7 +187,7 @@
     </article>
   </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/ecce.jpg)">
+  <slide hidden class="fill nobackground" style="background-image: url(images/ecce.jpg)">
   </slide>
 
   <slide>
@@ -209,7 +209,7 @@
     <footer class="source">More info: <a href="https://drupal.org/node/1199946">https://drupal.org/node/1199946</a> | <a href="https://drupal.org/node/2081873">https://drupal.org/node/2081873</a> | <a href="https://drupal.org/node/2193013">https://drupal.org/node/2193013</a></footer>
   </slide>
 
-  <slide>
+  <slide hidden>
     <hgroup>
       <h2>Actions API</h2>
       <h3>Actions are now plugins!</h3>
@@ -226,7 +226,7 @@
     <footer class="source">More info: <a href="https://drupal.org/node/1846172">https://drupal.org/node/1846172</a></footer>
   </slide>
 
-  <slide>
+  <slide hidden>
     <hgroup>
       <h2>Actions API</h2>
     </hgroup>
@@ -250,7 +250,7 @@ interface PluginFormInterface {
     </article>
   </slide>
 
-  <slide>
+  <slide hidden>
     <hgroup>
       <h2>Actions API</h2>
       <h3>Example: configured action</h3>
@@ -280,7 +280,7 @@ interface PluginFormInterface {
       <ul>
         <li>Menus are <b class="blue3">config entities</b> same as vocabularies</li>
         <li>Menu links (items) are <b class="blue3">content entities</b></li>
-        <li>hook_menu() still exists but doesn't include any <b class="blue3">routing information</b></li>
+        <li>hook_menu() disappears</li>
         <li>What you define in hook_menu() is stored as content entities (menu links)</li>
       </ul>
     </article>
@@ -332,11 +332,13 @@ interface PluginFormInterface {
           <li>Blog</li>
           <li>Trigger</li>
           <li>Dashboard</li>
+          <li>Menu</li>
         </ul>
         <ul>
           <li>OpenID</li>
           <li>Poll</li>
           <li>Garland</li>
+          <li>Overlay</li>
         </ul>
       </div>
     </article>
@@ -422,7 +424,7 @@ class MachineName extends ProcessPluginBase {
     <article class="bigger">
       <ul class="build">
         <li>New directory structure</li>
-        <li>Class autoloader: PSR-0</li>
+        <li>Class autoloader: PSR-4</li>
         <li>Enhanced entity support for Mongo DB</li>
         <li>UX improvements on content creation</li>
         <li>Style guide</li>
@@ -554,10 +556,10 @@ class MachineName extends ProcessPluginBase {
     <footer class="source">More info: <a href="https://drupal.org/node/2100015">https://drupal.org/node/2100015</a></footer>
   </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/tombstone.jpg)">
+  <slide hidden class="fill nobackground" style="background-image: url(images/tombstone.jpg)">
   </slide>
 
-  <slide>
+  <slide hidden>
     <hgroup>
       <h2>Fields & CMI</h2>
     </hgroup>
@@ -571,7 +573,7 @@ class MachineName extends ProcessPluginBase {
     </article>
   </slide>
 
-  <slide>
+  <slide hidden>
     <hgroup>
       <h2>Field definition</h2>
       <h3>field.field.body.yml</h3>
@@ -600,7 +602,7 @@ translatable: '0'
     </article>
   </slide>
 
-  <slide>
+  <slide hidden>
     <hgroup>
       <h2>Field instance definition</h2>
       <h3>field.node.article.body.yml</h3>
@@ -627,14 +629,14 @@ field_type: text_with_summary</b>
     </article>
   </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/clowns.png)">
+  <slide hidden class="fill nobackground" style="background-image: url(images/clowns.png)">
     <article class="centered flexbox vleft build">
       <h2 class="white bg-read">Don't hack your active config, YO!</h2>
     </article>
     <footer class="source"><a href="http://www.flickr.com/photos/gfoster67/9991374276/sizes/k/in/photostream/">photo credit</a></footer>
   </slide>
 
-  <slide>
+  <slide hidden>
     <hgroup>
       <h2>CRUD API changes for fields</h2>
     </hgroup>
@@ -657,7 +659,7 @@ $field->save();
     </article>
   </slide>
 
-  <slide>
+  <slide hidden>
     <hgroup>
       <h2>CRUD API changes for fields</h2>
       <h3>Update and delete fields</h3>
@@ -786,7 +788,7 @@ then we can’t be friends
     </article>
   </slide>
 
-  <slide>
+  <slide hidden>
     <article>
       <iframe data-src="http://drupal8.local/admin/config/people/accounts/form-display"></iframe>
     </article>
@@ -1039,7 +1041,7 @@ $properties['title'] = array(
     </article>
   </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/devdayswithoutlogo.png)">
+  <slide hidden class="fill nobackground" style="background-image: url(images/devdayswithoutlogo.png)">
     <article class="centered flexbox vleft">
       <h2 class="white bg-read">D8 Field API: Fields reborn</h2>
       <h3 class="white bg-read">by the man himself: Krisfof de Jaeger</h3>
@@ -1072,7 +1074,7 @@ $properties['title'] = array(
   </slide>
 
   <slide class="thank-you-slide segue nobackground">
-    <aside class="gdbar right"><img src="images/devdayslogo.png"></aside>
+    <aside class="gdbar right"><img src="images/drupalupclogo.png"></aside>
     <article class="flexbox vleft auto-fadein">
       <h2>&lt;Thank You!&gt;</h2>
     </article>

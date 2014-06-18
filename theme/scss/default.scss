@@ -168,19 +168,19 @@ slides > slide {
     //background: white url(../../images/google_developers_icon_128.png) ($brand-small-icon-size * 2) 98% no-repeat;
     //@include background-size($brand-small-icon-size $brand-small-icon-size);
 
-    &:before {
-      font-size: 12pt;
-      content: $social-tags;
-      position: absolute;
-      bottom: $slide-top-bottom-padding / 2;
-      left: $slide-left-right-padding;
-      background: url(../../images/devdaysplanet.png) no-repeat 0 50%;
-      @include background-size($brand-small-icon-height $brand-small-icon-width);
-      padding-left: $brand-small-icon-height + 10;
-      height: $brand-small-icon-height;
-      width: $brand-small-icon-width;
-      line-height: 1.9;
-    }
+    // &:before {
+    //   font-size: 12pt;
+    //   content: $social-tags;
+    //   position: absolute;
+    //   bottom: $slide-top-bottom-padding / 2;
+    //   left: $slide-left-right-padding;
+    //   background: url(../../images/devdaysplanet.png) no-repeat 0 50%;
+    //   @include background-size($brand-small-icon-height $brand-small-icon-width);
+    //   padding-left: $brand-small-icon-height + 10;
+    //   height: $brand-small-icon-height;
+    //   width: $brand-small-icon-width;
+    //   line-height: 1.9;
+    // }
     &:after {
       font-size: 12pt;
       content: attr(data-slide-num) '/' attr(data-total-slides);
@@ -964,7 +964,7 @@ aside.gdbar {
 
     img {
       @include transform(rotateZ(180deg));
-      margin: 20px 18px;
+      padding-right: 20px;
     }
   }
 
